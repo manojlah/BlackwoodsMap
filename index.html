@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+    html {
+    height: 100%;
+    }
+
+      body {
+        background: linear-gradient(to bottom right, #205387, #205387,#e67b05,#e67b05) no-repeat;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      
+      #map {
+        position: absolute;
+        top: 25%;
+        left: 518px;
+        width: 500px;
+        height: 500px;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.5);
+        z-index: 1;
+      }
+
+      .logo_right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 350px;
+        width: 325px;
+        height: 75px;
+      }
+
+      .logo_left {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 325px;
+        height: 75px;   
+      } 
+      
+    </style>
+  </head>
+
+  <header>
+    
+    <h1 style="text-align:center; font-style: bold; text-decoration-line:underline; color:#000000;
+            font-family: 'Roboto', sans-serif; font-size: 35px; height: 100%;" >
+                <span style = "color: #ff2e1d" > Alstom </span> - 
+                <span style = "color: #e67b05" > Blackwoods </span> 
+                <span style = "color: #000000"> Locations in Australia </span>
+    </h1>
+    
+
+  </header>
+  
+  <body>
+    <div>
+      <div id="map" >
+        <iframe width= "500px" height="500px" src="https://snazzymaps.com/embed/466184"></iframe>
+      </div>
+      <img class="logo_right" src="https://www.itwpf.com.au/applied/wp-content/uploads/sites/11/2016/09/blackwoods-logo-1024x234.png" alt="Blackwoods Logo">
+    <img class="logo_left" src="data:image/png;base64,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" alt="Alstom Logo">
+    </div>
+    
+    
+    
+  </body>
+</html>
